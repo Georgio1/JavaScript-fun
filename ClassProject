@@ -1,0 +1,83 @@
+var item1 = {itemName:"apples", itemPrice:2.00}
+console.log ("Item 1 name is " + (item1.itemName) + " and it has a price of $" + (item1.itemPrice));
+
+var item2 = {itemName:"tomatoes", itemPrice:3.00}
+console.log ("Item 2 name is " + (item2.itemName) + " and it has a price of $" + (item2.itemPrice));
+
+var item3 = {itemName:"broccoli", itemPrice:2.50}
+console.log ("Item 3 name is " + (item3.itemName) + " and it has a price of $" + (item3.itemPrice));
+
+var item4 = {itemName:"beans", itemPrice:2.00}
+console.log ("Item 4 name is " + (item4.itemName) + " and it has a price of $" + (item4.itemPrice));
+
+var item5 = {itemName:"pears", itemPrice:3.00}
+console.log ("Item 5 name is " + (item5.itemName) + " and it has a price of $" + (item5.itemPrice));
+
+var item6 = {itemName:"oranges", itemPrice:2.50}
+console.log ("Item 6 name is " + (item6.itemName) + " and it has a price of $" + (item6.itemPrice));
+
+var item7 = {itemName:"onions", itemPrice:3.00}
+console.log ("Item 7 name is " + (item7.itemName) + " and it has a price of $" + (item7.itemPrice));
+
+var item8 = {itemName:"okra", itemPrice:2.50}
+console.log ("Item 8 name is " + (item8.itemName) + " and it has a price of $" + (item8.itemPrice));
+
+var item9 = {itemName:"melons", itemPrice:2.50}
+console.log ("Item 9 name is " + (item9.itemName) + " and it has a price of $" + (item9.itemPrice));
+
+var item10 = {itemName:"carrots", itemPrice:3.00}
+console.log ("Item 10 name is " + (item10.itemName) + " and it has a price of $" + (item10.itemPrice));
+
+var item = window.prompt("Enter which item to buy.", "");
+
+switch (item) {
+  case "apples" :
+    item = item1;
+    break;
+  case "tomatoes" :
+    item = item2;
+    break;
+    case "broccoli" :
+    item = item3;
+    break;
+    case "beans" :
+    item = item4;
+    break;
+    case "pears" :
+    item = item5;
+    break;
+    case "oranges" :
+    item = item6;
+    break;
+    case "onions" :
+    item = item7;
+    break;
+    case "okra" :
+    item = item8;
+    break;
+    case "melons" :
+    item = item9;
+    break;
+    case "carrots" :
+    item = item10;
+    break;
+  default :
+    window.alert("You did not enter a correct item.");
+}
+
+
+var amount = window.prompt("Enter how many to buy.", "");
+
+if ( (amount > 0) && (amount < 4) ) {
+	totalPrice = itemPrice * amount;
+}
+else if ( (amount >= 5) && (amount < 8) ) {
+	totalPrice = itemPrice * 0.8 * amount;
+	}
+	else if ( (amount >= 8) && (amount < 10) ) {
+		totalPrice = itemPrice * 0.7 * amount;
+		}
+else {
+	totalPrice = itemPrice * 0.6 * amount;
+}
+console.log("You bought", amount, "and the total price is $", totalPrice);
